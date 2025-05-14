@@ -13,5 +13,5 @@ module "instance" {
   key_name = var.key_name
   ami = var.ami_name
   instance_type = var.instance_type
-  
+  subnet_id = module.vpc.subnet_id
 }
